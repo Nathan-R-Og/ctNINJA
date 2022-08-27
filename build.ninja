@@ -79,3 +79,784 @@ build tools/build/yay0/Yay0compress: cc_tool tools/build/yay0/Yay0compress.c
 build tools/build/rom/n64crc: cc_tool tools/build/rom/n64crc.c
 build build/jp/asm/header.s.o: as asm/header.s
   version = jp
+build build/jp/assets/jp/boot.bin.o: bin assets/jp/boot.bin
+  version = jp
+build build/jp/src/code/1000.c.o: cc src/code/1000.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/code/1050.c.o: cc src/code/1050.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/code/84E0.c.o: cc src/code/84E0.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/code/298D0.c.o: cc src/code/298D0.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/code/29DF0.c.o: cc src/code/29DF0.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/code/2C3B0.c.o: cc src/code/2C3B0.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/code/30FB0.c.o: cc src/code/30FB0.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/code/5FEB0.c.o: cc src/code/5FEB0.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/code/5FF30.c.o: cc src/code/5FF30.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/code/A3D00.c.o: cc src/code/A3D00.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/code/A4300.c.o: cc src/code/A4300.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/code/B2860.c.o: cc src/code/B2860.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/code/B39A0.c.o: cc src/code/B39A0.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/motor.c.o: cc src/io/motor.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/os/initialize.c.o: cc src/os/initialize.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/os/createthread.c.o: cc src/os/createthread.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/os/startthread.c.o: cc src/os/startthread.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/io/vimgr.c.o: cc src/io/vimgr.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/visetmode.c.o: cc src/io/visetmode.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/viblack.c.o: cc src/io/viblack.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/visetspecial.c.o: cc src/io/visetspecial.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/pimgr.c.o: cc src/io/pimgr.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/os/setthreadpri.c.o: cc src/os/setthreadpri.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/os/createmesgqueue.c.o: cc src/os/createmesgqueue.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/io/pidma.c.o: cc src/io/pidma.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/os/recvmesg.c.o: cc src/os/recvmesg.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/io/pirawread.c.o: cc src/io/pirawread.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/gu/mtxutil.c.o: cc src/gu/mtxutil.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/gu/rotateRPY.c.o: cc src/gu/rotateRPY.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/gu/mtxcatl.c.o: cc src/gu/mtxcatl.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/gu/rotate.c.o: cc src/gu/rotate.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/gu/sinf.c.o: cc src/gu/sinf.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/gu/translate.c.o: cc src/gu/translate.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/os/writebackdcache.c.o: cc src/os/writebackdcache.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/io/viswapbuf.c.o: cc src/io/viswapbuf.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/gu/sqrtf.c.o: cc src/gu/sqrtf.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/gu/cosf.c.o: cc src/gu/cosf.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/os/seteventmesg.c.o: cc src/os/seteventmesg.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/io/controller.c.o: cc src/io/controller.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/pfsinit.c.o: cc src/io/pfsinit.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/contreaddata.c.o: cc src/io/contreaddata.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/libc/syncprintf.c.o: cc src/libc/syncprintf.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/gu/align.c.o: cc src/gu/align.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/gu/lookatstereo.c.o: cc src/gu/lookatstereo.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/gu/perspective.c.o: cc src/gu/perspective.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/visetevent.c.o: cc src/io/visetevent.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/os/settimer.c.o: cc src/os/settimer.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/os/sendmesg.c.o: cc src/os/sendmesg.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/os/writebackdcacheall.c.o: cc src/os/writebackdcacheall.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/io/sptask.c.o: cc src/io/sptask.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/visetyscale.c.o: cc src/io/visetyscale.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/os/virtualtophysical.c.o: cc src/os/virtualtophysical.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/sl.c.o: cc src/audio/sl.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/cents2ratio.c.o: cc src/audio/cents2ratio.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/os/invalicache.c.o: cc src/os/invalicache.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/os/invaldcache.c.o: cc src/os/invaldcache.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/heapinit.c.o: cc src/audio/heapinit.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/bnkf.c.o: cc src/audio/bnkf.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/aisetfreq.c.o: cc src/io/aisetfreq.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/csplayer.c.o: cc src/audio/csplayer.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/seqpsetbank.c.o: cc src/audio/seqpsetbank.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/sndpplayer.c.o: cc src/audio/sndpplayer.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/seqpsetpan.c.o: cc src/audio/seqpsetpan.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/synthesizer.c.o: cc src/audio/synthesizer.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/sptaskyield.c.o: cc src/io/sptaskyield.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/sptaskyielded.c.o: cc src/io/sptaskyielded.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/aisetnextbuf.c.o: cc src/io/aisetnextbuf.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/sndpallocate.c.o: cc src/audio/sndpallocate.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/sndpsetsound.c.o: cc src/audio/sndpsetsound.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/sndpsetpitch.c.o: cc src/audio/sndpsetpitch.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/sndpsetfxmix.c.o: cc src/audio/sndpsetfxmix.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/sndpsetpriority.c.o: cc src/audio/sndpsetpriority.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/sndpsetvol.c.o: cc src/audio/sndpsetvol.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/sndpsetpan.c.o: cc src/audio/sndpsetpan.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/sndpplay.c.o: cc src/audio/sndpplay.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/sndpgetstate.c.o: cc src/audio/sndpgetstate.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/sndpstop.c.o: cc src/audio/sndpstop.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/sndpdeallocate.c.o: cc src/audio/sndpdeallocate.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/seqpgetstate.c.o: cc src/audio/seqpgetstate.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/seqpsetvol.c.o: cc src/audio/seqpsetvol.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/seqpstop.c.o: cc src/audio/seqpstop.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/seqpplay.c.o: cc src/audio/seqpplay.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/seqpsettempo.c.o: cc src/audio/seqpsettempo.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/cspgettempo.c.o: cc src/audio/cspgettempo.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/seqpsetseq.c.o: cc src/audio/seqpsetseq.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/os/gettime.c.o: cc src/os/gettime.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/os/getcount.c.o: cc src/os/getcount.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/gu/getfrustum.c.o: cc src/gu/getfrustum.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/libc/bzero.c.o: cc src/libc/bzero.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/libc/ll.c.o: cc src/libc/ll.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/conteepprobe.c.o: cc src/io/conteepprobe.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/conteeplongwrite.c.o: cc src/io/conteeplongwrite.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/conteeplongread.c.o: cc src/io/conteeplongread.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/gu/random.c.o: cc src/gu/random.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/pfsisplug.c.o: cc src/io/pfsisplug.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/siacs.c.o: cc src/io/siacs.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/sirawdma.c.o: cc src/io/sirawdma.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/crc.c.o: cc src/io/crc.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/contramwrite.c.o: cc src/io/contramwrite.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/contramread.c.o: cc src/io/contramread.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/os/setsr.c.o: cc src/os/setsr.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/os/getsr.c.o: cc src/os/getsr.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/os/setfpccsr.c.o: cc src/os/setfpccsr.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/io/sprawread.c.o: cc src/io/sprawread.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/sprawwrite.c.o: cc src/io/sprawwrite.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/os/exceptasm.c.o: cc src/os/exceptasm.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/os/sethwinterrupt.c.o: cc src/os/sethwinterrupt.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/os/interrupt.c.o: cc src/os/interrupt.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/os/thread.c.o: cc src/os/thread.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/os/timerintr.c.o: cc src/os/timerintr.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/os/getthreadpri.c.o: cc src/os/getthreadpri.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/io/vi.c.o: cc src/io/vi.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/vigetcurrcontext.c.o: cc src/io/vigetcurrcontext.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/viswapcontext.c.o: cc src/io/viswapcontext.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/piacs.c.o: cc src/io/piacs.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/pirawdma.c.o: cc src/io/pirawdma.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/os/jammesg.c.o: cc src/os/jammesg.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/io/pigetcmdq.c.o: cc src/io/pigetcmdq.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/gu/mtxcatf.c.o: cc src/gu/mtxcatf.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/gu/normalize.c.o: cc src/gu/normalize.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/contpfs.c.o: cc src/io/contpfs.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/pfschecker.c.o: cc src/io/pfschecker.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/libc/bcopy.c.o: cc src/libc/bcopy.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/spsetstat.c.o: cc src/io/spsetstat.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/spsetpc.c.o: cc src/io/spsetpc.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/sprawdma.c.o: cc src/io/sprawdma.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/sp.c.o: cc src/io/sp.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/os/probetlb.c.o: cc src/os/probetlb.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/syndelete.c.o: cc src/audio/syndelete.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/seqplayer.c.o: cc src/audio/seqplayer.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/event.c.o: cc src/audio/event.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/synaddplayer.c.o: cc src/audio/synaddplayer.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/synstopvoice.c.o: cc src/audio/synstopvoice.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/synfreevoice.c.o: cc src/audio/synfreevoice.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/synsetvol.c.o: cc src/audio/synsetvol.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/synsetpitch.c.o: cc src/audio/synsetpitch.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/synallocvoice.c.o: cc src/audio/synallocvoice.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/synstartvoiceparam.c.o: cc src/audio/synstartvoiceparam.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/synsetpan.c.o: cc src/audio/synsetpan.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/synsetfxmix.c.o: cc src/audio/synsetfxmix.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/os/setintmask.c.o: cc src/os/setintmask.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/synstartvoice.c.o: cc src/audio/synstartvoice.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/drvrNew.c.o: cc src/audio/drvrNew.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/synallocfx.c.o: cc src/audio/synallocfx.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/mainbus.c.o: cc src/audio/mainbus.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/load.c.o: cc src/audio/load.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/resample.c.o: cc src/audio/resample.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/env.c.o: cc src/audio/env.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/auxbus.c.o: cc src/audio/auxbus.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/save.c.o: cc src/audio/save.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/spgetstat.c.o: cc src/io/spgetstat.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/ai.c.o: cc src/io/ai.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/conteepwrite.c.o: cc src/io/conteepwrite.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/conteepread.c.o: cc src/io/conteepread.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/io/si.c.o: cc src/io/si.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/os/destroythread.c.o: cc src/os/destroythread.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/io/leodiskinit.c.o: cc src/io/leodiskinit.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/os/setcompare.c.o: cc src/os/setcompare.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/os/resetglobalintmask.c.o: cc src/os/resetglobalintmask.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/io/epirawwrite.c.o: cc src/io/epirawwrite.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/os/yieldthread.c.o: cc src/os/yieldthread.c || generated_headers_jp
+  version = jp
+  cflags = 
+  cppflags = -DVERSION_JP
+build build/jp/src/libc/string.c.o: cc src/libc/string.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/libc/xlitob.c.o: cc src/libc/xlitob.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/libc/xldtob.c.o: cc src/libc/xldtob.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/seq.c.o: cc src/audio/seq.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/synsetpriority.c.o: cc src/audio/synsetpriority.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/copy.c.o: cc src/audio/copy.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/filter.c.o: cc src/audio/filter.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/audio/reverb.c.o: cc src/audio/reverb.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/src/libc/ldiv.c.o: cc src/libc/ldiv.c || generated_headers_jp
+  version = jp
+  cflags = -fforce-addr
+  cppflags = -DVERSION_JP
+build build/jp/assets/jp/C95C0.bin.o: bin assets/jp/C95C0.bin
+  version = jp
+build build/jp/assets/jp/C9F50.bin.o: bin assets/jp/C9F50.bin
+  version = jp
+build build/jp/asm/data/E56F0.rodata.s.o: as asm/data/E56F0.rodata.s
+  version = jp
+build build/jp/asm/data/E5AD0.rodata.s.o: as asm/data/E5AD0.rodata.s
+  version = jp
+build build/jp/asm/data/E6680.rodata.s.o: as asm/data/E6680.rodata.s
+  version = jp
+build build/jp/asm/data/E7D40.rodata.s.o: as asm/data/E7D40.rodata.s
+  version = jp
+build build/jp/asm/data/E8930.rodata.s.o: as asm/data/E8930.rodata.s
+  version = jp
+build build/jp/assets/jp/E8F00.bin.o: bin assets/jp/E8F00.bin
+  version = jp
+build build/jp/assets/jp/EC5D0.bin.o: bin assets/jp/EC5D0.bin
+  version = jp
+build build/jp/assets/jp/ext.bin.o: bin assets/jp/ext.bin
+  version = jp
+build build/jp/assets/jp/star.rgba32.png.bin: img assets/jp/star.rgba32.png
+  version = jp
+  img_type = rgba32
+  img_flags = 
+build build/jp/assets/jp/star.rgba32.png.o: bin build/jp/assets/jp/star.rgba32.png.bin
+  version = jp
+build ver/jp/build/include/star.rgba32.png.h: img_header assets/jp/star.rgba32.png
+  version = jp
+build build/jp/assets/jp/ext22.bin.o: bin assets/jp/ext22.bin
+  version = jp
+build build/jp/assets/jp/exxxx.bin.o: bin assets/jp/exxxx.bin
+  version = jp
+build build/jp/assets/jp/textSmall.ia4.png.bin: img assets/jp/textSmall.ia4.png
+  version = jp
+  img_type = ia4
+  img_flags = 
+build build/jp/assets/jp/textSmall.ia4.png.o: bin build/jp/assets/jp/textSmall.ia4.png.bin
+  version = jp
+build ver/jp/build/include/textSmall.ia4.png.h: img_header assets/jp/textSmall.ia4.png
+  version = jp
+build build/jp/assets/jp/ext2.bin.o: bin assets/jp/ext2.bin
+  version = jp
+build build/jp/assets/jp/star2.ia4.png.bin: img assets/jp/star2.ia4.png
+  version = jp
+  img_type = ia4
+  img_flags = 
+build build/jp/assets/jp/star2.ia4.png.o: bin build/jp/assets/jp/star2.ia4.png.bin
+  version = jp
+build ver/jp/build/include/star2.ia4.png.h: img_header assets/jp/star2.ia4.png
+  version = jp
+build build/jp/assets/jp/ashashg.bin.o: bin assets/jp/ashashg.bin
+  version = jp
+build build/jp/assets/jp/explode.ia4.png.bin: img assets/jp/explode.ia4.png
+  version = jp
+  img_type = ia4
+  img_flags = 
+build build/jp/assets/jp/explode.ia4.png.o: bin build/jp/assets/jp/explode.ia4.png.bin
+  version = jp
+build ver/jp/build/include/explode.ia4.png.h: img_header assets/jp/explode.ia4.png
+  version = jp
+build build/jp/assets/jp/hhahaha.bin.o: bin assets/jp/hhahaha.bin
+  version = jp
+build build/jp/assets/jp/img/misc/titleSplash.rgba16.png.bin: img assets/jp/img/misc/titleSplash.rgba16.png
+  version = jp
+  img_type = rgba16
+  img_flags = 
+build build/jp/assets/jp/img/misc/titleSplash.rgba16.png.o: bin build/jp/assets/jp/img/misc/titleSplash.rgba16.png.bin
+  version = jp
+build ver/jp/build/include/img/misc/titleSplash.rgba16.png.h: img_header assets/jp/img/misc/titleSplash.rgba16.png
+  version = jp
+build build/jp/assets/jp/img/misc/stageSelect.rgba16.png.bin: img assets/jp/img/misc/stageSelect.rgba16.png
+  version = jp
+  img_type = rgba16
+  img_flags = 
+build build/jp/assets/jp/img/misc/stageSelect.rgba16.png.o: bin build/jp/assets/jp/img/misc/stageSelect.rgba16.png.bin
+  version = jp
+build ver/jp/build/include/img/misc/stageSelect.rgba16.png.h: img_header assets/jp/img/misc/stageSelect.rgba16.png
+  version = jp
+build build/jp/assets/jp/ext3.bin.o: bin assets/jp/ext3.bin
+  version = jp
+build build/jp/assets/jp/davyheadMaybe.bin.o: bin assets/jp/davyheadMaybe.bin
+  version = jp
+build build/jp/assets/jp/ext4.bin.o: bin assets/jp/ext4.bin
+  version = jp
+build build/jp/assets/jp/jackheadMaybe.bin.o: bin assets/jp/jackheadMaybe.bin
+  version = jp
+build build/jp/assets/jp/ext5.bin.o: bin assets/jp/ext5.bin
+  version = jp
+build ver/jp/build/undefined_syms.txt: cpp ver/jp/undefined_syms.txt
+build ver/jp/build/chameleontwist.elf: ld ver/jp/chameleontwist.ld | build/jp/src/audio/sndpsetpan.c.o build/jp/src/io/contreaddata.c.o build/jp/src/audio/env.c.o build/jp/assets/jp/ext22.bin.o build/jp/src/io/motor.c.o build/jp/asm/header.s.o build/jp/src/audio/syndelete.c.o build/jp/src/gu/lookatstereo.c.o build/jp/src/audio/synallocvoice.c.o build/jp/src/os/timerintr.c.o build/jp/src/io/spgetstat.c.o build/jp/assets/jp/jackheadMaybe.bin.o build/jp/src/os/interrupt.c.o build/jp/src/audio/synsetvol.c.o build/jp/src/io/conteepwrite.c.o build/jp/src/io/vi.c.o build/jp/src/code/1000.c.o build/jp/src/os/createthread.c.o build/jp/src/os/setintmask.c.o build/jp/src/os/gettime.c.o build/jp/assets/jp/explode.ia4.png.o build/jp/src/gu/sinf.c.o build/jp/src/io/pfsisplug.c.o build/jp/src/io/viswapcontext.c.o build/jp/src/audio/bnkf.c.o build/jp/src/audio/synsetpan.c.o build/jp/src/audio/synstartvoiceparam.c.o build/jp/src/os/setsr.c.o build/jp/src/libc/string.c.o build/jp/assets/jp/ext3.bin.o build/jp/src/io/sprawdma.c.o build/jp/src/io/pimgr.c.o build/jp/src/gu/sqrtf.c.o build/jp/src/gu/normalize.c.o build/jp/asm/data/E6680.rodata.s.o build/jp/src/code/1050.c.o build/jp/src/os/sethwinterrupt.c.o build/jp/src/audio/sndpstop.c.o build/jp/src/audio/mainbus.c.o build/jp/src/audio/resample.c.o build/jp/src/io/spsetpc.c.o build/jp/assets/jp/ext.bin.o build/jp/src/io/viblack.c.o build/jp/src/code/A3D00.c.o build/jp/src/libc/xlitob.c.o build/jp/src/code/5FF30.c.o build/jp/src/io/pirawread.c.o build/jp/assets/jp/E8F00.bin.o build/jp/src/libc/syncprintf.c.o build/jp/src/audio/synstopvoice.c.o build/jp/src/io/vimgr.c.o build/jp/src/os/setfpccsr.c.o build/jp/src/os/destroythread.c.o build/jp/src/io/sp.c.o build/jp/src/io/spsetstat.c.o build/jp/src/os/yieldthread.c.o build/jp/src/gu/cosf.c.o build/jp/src/io/conteepread.c.o build/jp/src/gu/rotateRPY.c.o build/jp/src/io/epirawwrite.c.o build/jp/src/os/writebackdcache.c.o build/jp/src/io/viswapbuf.c.o build/jp/src/io/controller.c.o build/jp/src/audio/filter.c.o build/jp/src/code/B39A0.c.o build/jp/asm/data/E7D40.rodata.s.o build/jp/assets/jp/star.rgba32.png.o build/jp/assets/jp/EC5D0.bin.o build/jp/assets/jp/img/misc/titleSplash.rgba16.png.o build/jp/src/audio/seqpsetbank.c.o build/jp/src/io/vigetcurrcontext.c.o build/jp/src/audio/seq.c.o build/jp/src/audio/seqpsetpan.c.o build/jp/src/code/A4300.c.o build/jp/src/os/exceptasm.c.o build/jp/src/audio/auxbus.c.o build/jp/src/code/29DF0.c.o build/jp/assets/jp/textSmall.ia4.png.o build/jp/src/audio/seqpgetstate.c.o build/jp/src/io/leodiskinit.c.o build/jp/assets/jp/ext5.bin.o build/jp/src/io/conteeplongread.c.o build/jp/src/audio/seqpstop.c.o build/jp/src/io/visetmode.c.o build/jp/src/audio/copy.c.o build/jp/src/io/sptaskyielded.c.o build/jp/src/audio/save.c.o build/jp/assets/jp/hhahaha.bin.o build/jp/src/audio/sl.c.o build/jp/src/code/5FEB0.c.o build/jp/src/os/settimer.c.o build/jp/src/audio/cents2ratio.c.o build/jp/src/io/sprawread.c.o build/jp/src/audio/synfreevoice.c.o build/jp/src/io/ai.c.o build/jp/src/io/conteepprobe.c.o build/jp/src/audio/synsetfxmix.c.o build/jp/src/io/sptaskyield.c.o build/jp/src/io/sirawdma.c.o build/jp/asm/data/E5AD0.rodata.s.o build/jp/src/audio/sndpsetfxmix.c.o build/jp/src/audio/sndpgetstate.c.o build/jp/src/io/visetevent.c.o build/jp/src/io/aisetnextbuf.c.o build/jp/src/os/writebackdcacheall.c.o build/jp/src/audio/event.c.o build/jp/src/os/getcount.c.o build/jp/src/gu/mtxutil.c.o build/jp/src/audio/seqplayer.c.o build/jp/src/audio/heapinit.c.o build/jp/src/audio/cspgettempo.c.o build/jp/src/audio/sndpsetsound.c.o build/jp/src/os/setthreadpri.c.o build/jp/src/io/contramread.c.o build/jp/assets/jp/exxxx.bin.o build/jp/src/io/conteeplongwrite.c.o build/jp/src/audio/synaddplayer.c.o build/jp/src/io/siacs.c.o build/jp/src/io/crc.c.o build/jp/src/libc/ll.c.o build/jp/src/io/contramwrite.c.o build/jp/src/io/contpfs.c.o build/jp/assets/jp/C95C0.bin.o build/jp/src/audio/synsetpitch.c.o build/jp/src/io/piacs.c.o build/jp/src/audio/sndpsetpitch.c.o build/jp/asm/data/E56F0.rodata.s.o build/jp/assets/jp/ext4.bin.o build/jp/assets/jp/boot.bin.o build/jp/assets/jp/ext2.bin.o build/jp/src/os/getthreadpri.c.o build/jp/src/code/30FB0.c.o build/jp/src/code/298D0.c.o build/jp/src/audio/drvrNew.c.o build/jp/src/io/visetspecial.c.o build/jp/src/os/initialize.c.o build/jp/src/audio/sndpsetvol.c.o build/jp/src/audio/seqpsetvol.c.o build/jp/src/gu/getfrustum.c.o build/jp/src/audio/sndpsetpriority.c.o build/jp/src/os/thread.c.o build/jp/src/io/pirawdma.c.o build/jp/assets/jp/img/misc/stageSelect.rgba16.png.o build/jp/src/os/createmesgqueue.c.o build/jp/src/gu/perspective.c.o build/jp/src/audio/seqpplay.c.o build/jp/src/io/pigetcmdq.c.o build/jp/src/audio/synthesizer.c.o build/jp/src/os/virtualtophysical.c.o build/jp/src/io/pidma.c.o build/jp/src/io/aisetfreq.c.o build/jp/src/libc/ldiv.c.o build/jp/src/audio/sndpplay.c.o build/jp/src/gu/translate.c.o build/jp/src/audio/sndpplayer.c.o build/jp/src/code/84E0.c.o build/jp/src/os/invaldcache.c.o build/jp/src/io/pfsinit.c.o build/jp/src/gu/rotate.c.o build/jp/src/os/sendmesg.c.o build/jp/src/io/visetyscale.c.o build/jp/src/io/si.c.o build/jp/assets/jp/C9F50.bin.o build/jp/src/libc/xldtob.c.o build/jp/assets/jp/davyheadMaybe.bin.o build/jp/src/audio/csplayer.c.o build/jp/src/os/setcompare.c.o build/jp/assets/jp/ashashg.bin.o build/jp/src/gu/mtxcatf.c.o build/jp/src/os/recvmesg.c.o build/jp/src/audio/synallocfx.c.o build/jp/src/gu/align.c.o build/jp/src/os/invalicache.c.o build/jp/src/gu/mtxcatl.c.o build/jp/src/audio/load.c.o build/jp/src/libc/bzero.c.o build/jp/src/audio/sndpdeallocate.c.o build/jp/src/os/jammesg.c.o build/jp/src/audio/seqpsetseq.c.o build/jp/src/os/probetlb.c.o build/jp/src/os/resetglobalintmask.c.o build/jp/src/libc/bcopy.c.o build/jp/src/os/startthread.c.o build/jp/src/audio/synstartvoice.c.o build/jp/assets/jp/star2.ia4.png.o build/jp/asm/data/E8930.rodata.s.o build/jp/src/audio/synsetpriority.c.o build/jp/src/audio/reverb.c.o build/jp/src/os/seteventmesg.c.o build/jp/src/io/pfschecker.c.o build/jp/src/code/B2860.c.o build/jp/src/audio/sndpallocate.c.o build/jp/src/io/sprawwrite.c.o build/jp/src/code/2C3B0.c.o build/jp/src/os/getsr.c.o build/jp/src/audio/seqpsettempo.c.o build/jp/src/io/sptask.c.o build/jp/src/gu/random.c.o ver/jp/build/undefined_syms.txt
+  version = jp
+  mapfile = ver/jp/build/chameleontwist.map
+build ver/jp/build/chameleontwist.z64: z64 ver/jp/build/chameleontwist.elf | tools/build/rom/n64crc
+  version = jp
+build ver/jp/build/chameleontwist.ok: sha1sum ver/jp/checksum.sha1 | ver/jp/build/chameleontwist.z64
+build generated_headers_jp: phony ver/jp/build/include/star.rgba32.png.h ver/jp/build/include/textSmall.ia4.png.h ver/jp/build/include/star2.ia4.png.h ver/jp/build/include/explode.ia4.png.h ver/jp/build/include/img/misc/titleSplash.rgba16.png.h ver/jp/build/include/img/misc/stageSelect.rgba16.png.h
+build ver/current/build/chameleontwist.z64: phony ver/jp/build/chameleontwist.z64
+build all: phony ver/jp/build/chameleontwist.ok
+default all

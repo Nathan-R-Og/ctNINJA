@@ -272,7 +272,8 @@ class Configure:
                           "pm_charset_palettes", "pm_effect_loads", "pm_effect_shims"])
         if code:
             modes.extend(["code", "c", "data", "rodata"])
-
+        
+        modes = ["all"]
         splat_file = [str(self.version_path / "splat.yaml")]
         if debug:
             splat_file += [str(self.version_path / "splat-debug.yaml")]
@@ -343,6 +344,7 @@ class Configure:
         import segtypes
         import segtypes.common.data
         import segtypes.n64.Yay0
+        import segtypes.common.asm
         #import splat segtypes
 
         assert self.linker_entries is not None
