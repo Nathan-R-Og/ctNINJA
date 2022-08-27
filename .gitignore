@@ -12,6 +12,8 @@ asm/
 assets/
 build/
 !tools/build
+build.ninja
+.splat_cache
 expected/
 
 # Tool artifacts

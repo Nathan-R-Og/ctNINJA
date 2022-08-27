@@ -7,7 +7,7 @@ options:
   compiler: IDO
   find_file_boundaries: True
   header_encoding: ASCII
-  asm_data_macro: "macro.inc"
+  asm_data_macro: "macro"
 
 
   target_path: ver/jp/baserom.z64
@@ -19,7 +19,7 @@ options:
   asset_path: assets/jp
   src_path: src
   build_path: build/jp
-  # undefined_syms_path: ver/jp/undefined_syms.txt
+  undefined_syms_auto_path: ver/jp/undefined_syms.txt
   # auto_all_sections: True
   create_undefined_funcs_auto: no
 asset_stack:
